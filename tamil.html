@@ -1,0 +1,145 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<!-- Copyright (c) 2006 Vijay Lakshminarayanan <liyer.vijay@gmail.com> -->
+<!-- Permission is granted to copy, distribute and/or modify this      -->
+<!-- document under the terms of the GNU Free Documentation License,   -->
+<!-- Version 1.2 or any later version published by the Free Software   -->
+<!-- Foundation; with no Invariant Sections, no Front-Cover Texts, and -->
+<!-- no Back-Cover Texts.  A copy of the license is included in the    -->
+<!-- section entitled "GNU Free Documentation License".                -->
+
+<!-- 	$Id: tamil.html,v 1.6 2006-03-26 02:47:33 vijay Exp $	 -->
+<!-- 	Author: Vijay Lakshminarayanan	 -->
+<!-- 	$Date: 2006-03-26 02:47:33 $	 -->
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="languages.css" />
+  <title>English to Tamil converter</title>
+  <script src="tamil.js"></script>
+  <script src="converter.js"></script>
+</head>
+
+<body>
+
+<h2 align="center">Transliterate to Tamil</h2>
+
+<p>
+ <table>
+  <form name="convarea">
+   <tr>
+    <th>Type your text here</th>
+    <th>See your results here</th>
+   <tr>
+    <td>
+      <textarea style="width:100%;height:150px"
+                name="many_words_text"
+                rows="10" cols="40"
+                onFocus="javascript:print_many_words()"
+                onKeyUp="javascript:print_many_words()">AnGkilaththukku Nigaraana thamizh choRkaL aRiya inGku ezhuthunGkaL</textarea>
+    </td>
+    <td>
+      <textarea style="width:100%;height:150px"
+                rows="10" cols="40" name="converted_text"></textarea>
+    </td>
+   </tr>
+   <tr>
+    <th colspan="2"> Equivalent HTML text </th>
+   <tr>
+    <td colspan="2">
+      <textarea style="width:100%;height:75px"
+                rows="5" cols="80" name="html_text" readOnly></textarea>
+    </td> </tr>
+  </form>
+ </table>
+
+<p><a href="index.htm">Back to the Indian Language Converter</a>
+
+<p>
+<table>
+<td>
+<table border>
+<th colspan=12>The vowels:</th>
+  <tr><td> a  </td> <td class="mg"> &#2949;</td>
+      <td> aa, A </td> <td class="mg"> &#2950;</td>
+      <td> i  </td> <td class="mg"> &#2951;</td>
+      <td> ee, I </td> <td class="mg"> &#2952;</td>
+      <td> u  </td> <td class="mg"> &#2953;</td>
+      <td> oo, U </td> <td class="mg"> &#2954;</td>
+  <tr><td> e  </td> <td class="mg"> &#2958;</td>
+      <td> ae, E </td> <td class="mg"> &#2959;</td>
+      <td> ai </td> <td class="mg"> &#2960;</td>
+      <td> o  </td> <td class="mg"> &#2962;</td>
+      <td> oa, O </td> <td class="mg"> &#2963;</td>
+      <td> au </td> <td class="mg"> &#2964;</td>
+  <tr><td>Ahh, H </td> <td class="mg"> &#2947;</td>
+</table>
+
+<td>
+<table border>
+<th colspan=10>The Consonants:</th>
+  <tr><td>g, k, kh, c </td><td class="mg"> &#2965;&#3021;</td>
+      <td>nG </td><td class="mg"> &#2969;&#3021;</td>
+      <td>ch </td><td class="mg"> &#2970;&#3021; </td>
+      <td>j </td><td class="mg"> &#2972;&#3021;</td>
+      <td>nY </td><td class="mg"> &#2974;&#3021;</td>
+  <tr><td>d, t </td><td class="mg"> &#2975;&#3021;</td>
+      <td>nN </td><td class="mg"> &#2979;&#3021;</td>
+      <td>dh, th </td><td class="mg"> &#2980;&#3021;</td>
+      <td>N </td><td class="mg"> &#2984;&#3021;</td>
+      <td>n </td><td class="mg"> &#2985;&#3021;</td>
+  <tr><td>b, bh </td><td class="mg"> &#2986;&#3021;</td>
+      <td>m </td><td class="mg"> &#2990;&#3021;</td>
+      <td>y </td><td class="mg"> &#2991;&#3021;</td>
+      <td>r </td><td class="mg"> &#2992;&#3021;</td>
+      <td>R </td><td class="mg"> &#2993;&#3021; </td>
+  <tr><td>l </td><td class="mg"> &#2994;&#3021;</td>
+      <td>L </td><td class="mg"> &#2995;&#3021;</td>
+      <td>zh </td><td class="mg"> &#2996;&#3021;</td>
+      <td>v, w </td><td class="mg"> &#2997;&#3021;</td>
+  <tr><td>sh </td><td class="mg"> &#2999;&#3021;</td>
+      <td>s </td><td class="mg"> &#3000;&#3021;</td>
+      <td>h </td><td class="mg"> &#3001;&#3021;</td>
+      <td>f </td><td class="mg"> &#2947;&#2986;&#3021; </td>
+  </table>
+</table>
+
+<p>Letters like g and k represent the same thamizh letter.
+So, "akhilaa", "akilaa", "agilaa", "acilaa" all give
+"&#2949;&#2965;&#3007;&#2994;&#3006;"
+
+<p>
+To get the complete syllable, suffix it with an "a".  For eg., "pa"
+is "&#2986;".
+<p>
+For half syllables, stop with the code for that syllable alone.
+For eg., "zh" is "&#2996;&#3021;".  The general rule of thumb
+is that with two touching syllables, the former syllable is a
+half syllable.  So, "chcha" is "&#2970;&#3021;&#2970;".  The
+syllable "&#2969;&#3021;" has to be typed out as "ng" and
+it is usually followed by a "k".  As in, "thangkai"
+"&#2980;&#2969;&#3021;&#2965;&#3016;".
+
+<p>Some examples
+
+<table border>
+  <tr><td>vijay <td class="mg">&#2997;&#3007;&#2972;&#2991;&#3021;
+  <tr><td>vidhyaa <td class="mg">&#2997;&#3007;&#2980;&#3021;&#2991;&#3006;
+  <tr><td>lathaa <td class="mg">&#2994;&#2980;&#3006;
+  <tr><td>latchumiNaaraayanNan <td class="mg">&#2994;&#2975;&#3021;&#2970;&#3009;&#2990;&#3007;&#2984;&#3006;&#2992;&#3006;&#2991;&#2979;&#2985;&#3021;
+  <tr><td>akhilaa <td class="mg">&#2949;&#2965;&#3007;&#2994;&#3006;
+  <tr><td>pirathaap <td class="mg">&#2986;&#3007;&#2992;&#2980;&#3006;&#2986;&#3021;
+  <tr><td>bharath <td class="mg"> &#2986;&#2992;&#2980;&#3021;
+  <tr><td>kirushnNaswAmi <td class="mg">&#2965;&#3007;&#2992;&#3009;&#2999;&#3021;&#2979;&#3000;&#3021;&#2997;&#3006;&#2990;&#3007;
+</table>
+
+<p>Happy experimenting.
+
+<p>Contact: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><u><b>&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</b></u></a>
+
+<p>The code this site uses is <a href="ilc.zip">here.</a>  It is
+<a href="http://www.gnu.org/copyleft/gpl.html">free</a> for use.
+
+</body>
+</html>

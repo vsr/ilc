@@ -1,0 +1,138 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<!-- Copyright (c) 2006 Vijay Lakshminarayanan <liyer.vijay@gmail.com> -->
+<!-- Permission is granted to copy, distribute and/or modify this      -->
+<!-- document under the terms of the GNU Free Documentation License,   -->
+<!-- Version 1.2 or any later version published by the Free Software   -->
+<!-- Foundation; with no Invariant Sections, no Front-Cover Texts, and -->
+<!-- no Back-Cover Texts.  A copy of the license is included in the    -->
+<!-- section entitled "GNU Free Documentation License".                -->
+
+<!-- 	$Id: bengali.html,v 1.5 2006-03-26 02:40:32 vijay Exp $	 -->
+<!-- 	Author: Vijay Lakshminarayanan	 -->
+<!-- 	$Date: 2006-03-26 02:40:32 $	 -->
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="languages.css" />
+  <title>English to Bengali converter</title>
+  <script src="bengali.js"></script>
+  <script src="converter.js"></script>
+</head>
+
+<body>
+
+<h2 align="center">Transliterate to Bengali</h2>
+
+<p>
+ <table>
+  <form name="convarea">
+   <tr>
+    <th>Type your text here</th>
+    <th>See your results here</th>
+   <tr>
+    <td>
+      <textarea style="width:100%;height:150px"
+                name="many_words_text"
+                rows="10" cols="40"
+                onFocus="javascript:print_many_words()"
+                onKeyUp="javascript:print_many_words()">bMlaa</textarea>
+    </td>
+    <td>
+      <textarea style="width:100%;height:150px;font-size:20px;"
+                rows="10" cols="40" name="converted_text"></textarea>
+    </td>
+   </tr>
+   <tr>
+    <th colspan="2"> Equivalent HTML text </th>
+   <tr>
+    <td colspan="2">
+      <textarea style="width:100%;height:75px"
+                rows="5" cols="80" name="html_text" readOnly></textarea>
+    </td> </tr>
+  </form>
+ </table>
+
+<p><a href="index.htm">Back to the Indian Language Converter</a>
+
+<p>
+
+<table>
+ <td>
+ <table border>
+   <th colspan=12>The Vowels</th>
+   <tr><td>a  <td class="mg">&#2437;
+    <td>A, aa  <td class="mg">&#2438;
+    <td>i  <td class="mg">&#2439;
+    <td>I, ee  <td class="mg">&#2440;
+    <td>u  <td class="mg">&#2441;
+    <td>U, oo  <td class="mg">&#2442;
+   <tr><td>Rr  <td class="mg">&#2443;
+    <td>RrR  <td class="mg">&#2528;
+    <td>e  <td class="mg">&#2447;
+    <td>ai  <td class="mg">&#2448;
+    <td>o  <td class="mg">&#2451;
+    <td>au  <td class="mg">&#2452;
+   <tr><td>AO  <td class="mg">&#2437;&#2433;
+    <td>M  <td class="mg">&#2437;&#2434;
+    <td>H  <td class="mg">&#2437;&#2435;
+  </table>
+ <td>
+  <table border>
+   <th colspan=10>The Consonants</th>
+   <tr><td>k</td>  <td class="mg">&#2453;
+    <td>kh</td>  <td class="mg">&#2454;
+    <td>g</td>  <td class="mg">&#2455;
+    <td>gh</td>  <td class="mg">&#2456;
+    <td>G</td>  <td class="mg">&#2457;
+   <tr><td>ch</td>  <td class="mg">&#2458;
+    <td>Ch</td>  <td class="mg">&#2459;
+    <td>j</td>  <td class="mg">&#2460;
+    <td>jh</td>  <td class="mg">&#2461;
+    <td>nY</td>  <td class="mg">&#2462;
+   <tr><td>t</td>  <td class="mg">&#2463;
+    <td>T</td>  <td class="mg">&#2464;
+    <td>d</td>  <td class="mg">&#2465;
+    <td>D</td>  <td class="mg">&#2466;
+    <td>N</td>  <td class="mg">&#2467;
+   <tr><td>th</td>  <td class="mg">&#2468;
+    <td>Th</td>  <td class="mg">&#2469;
+    <td>dh</td>  <td class="mg">&#2470;
+    <td>Dh</td>  <td class="mg">&#2471;
+    <td>n</td>  <td class="mg">&#2472;
+   <tr><td>p</td>  <td class="mg">&#2474;
+    <td>ph</td>  <td class="mg">&#2475;
+    <td>b, v</td>  <td class="mg">&#2476;
+    <td>bh, B, Bh</td>  <td class="mg">&#2477;
+    <td>m</td>  <td class="mg">&#2478;
+   <tr><td>y</td>  <td class="mg">&#2479;
+    <td>r</td>  <td class="mg">&#2480;
+    <td>l</td>  <td class="mg">&#2482;
+   <tr><td>sh</td>  <td class="mg">&#2486;
+    <td>Sh</td>  <td class="mg">&#2487;
+    <td>s</td>  <td class="mg">&#2488;
+    <td>h</td>  <td class="mg">&#2489;
+   <tr><td>rR</td>  <td class="mg">&#2524;
+    <td>rRr</td>  <td class="mg">&#2525;
+    <td>Y</td>  <td class="mg">&#2527;
+  </table>
+</table>
+<p>Happy Experimenting!
+
+<p>I&39;m still searching for the ideal letter combinations to represent each
+syllable.  <br>If you have any ideas please tell me: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><u><b>&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</b></u></a>
+
+<p>
+The same applies to the other language pages also.  If you can suggest an <br>
+improvement to any letter combination in any page, tell me.
+
+<p>
+The goal is to make writing in each language as intuitive as possible.
+
+<p>The code this site uses is <a href="ilc.zip">here.</a>  It is
+<a href="http://www.gnu.org/copyleft/gpl.html">free</a>
+ for use.
+
+</body>
+</html>

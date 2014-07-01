@@ -1,0 +1,180 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<!-- Copyright (c) 2006 Vijay Lakshminarayanan <liyer.vijay@gmail.com> -->
+<!-- Permission is granted to copy, distribute and/or modify this      -->
+<!-- document under the terms of the GNU Free Documentation License,   -->
+<!-- Version 1.2 or any later version published by the Free Software   -->
+<!-- Foundation; with no Invariant Sections, no Front-Cover Texts, and -->
+<!-- no Back-Cover Texts.  A copy of the license is included in the    -->
+<!-- section entitled "GNU Free Documentation License".                -->
+
+<!-- 	$Id: gujarati.html,v 1.1 2006-03-30 12:25:24 vijay Exp $	 -->
+<!-- 	Author: Vijay Lakshminarayanan	 -->
+<!-- 	$Date: 2006-03-30 12:25:24 $	 -->
+<!--	Maintainer: Yash Gadhiya	-->
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="languages.css" />
+  <title>English to Gujarati converter</title>
+  <script src="gujarati.js"></script>
+  <script src="converter.js"></script>
+</head>
+
+<body>
+
+<h2 align="center">Transliterate to Gujarati</h2>
+
+<p>
+ <table>
+  <form name="convarea">
+   <tr>
+    <th>Type your text here (&#2724;&#2734;&#2750;&#2736;&#2753;&#2690; &#2738;&#2710;&#2750;&#2723; &#2693;&#2690;&#2711;&#2765;&#2736;&#2759;&#2716;&#2752;&#2734;&#2750;&#2690; &#2693;&#2745;&#2751;&#2690; &#2719;&#2750;&#2696;&#2730; &#2709;&#2736;&#2763;)</th>
+    <th>See your results here (&#2693;&#2728;&#2759; &#2693;&#2745;&#2751;&#2690; &#2724;&#2759;&#2728;&#2759; &#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;&#2734;&#2750;&#2690; &#2716;&#2753;&#2707;)</th>
+   <tr>
+    <td>
+      <textarea style="width:100%;height:150px"
+                name="many_words_text"
+                rows="10" cols="40"
+                onFocus="javascript:print_many_words()"
+                onKeyUp="javascript:print_many_words()">aMgrejee mAMThee gujaraathI</textarea>
+    </td>
+    <td>
+      <textarea style="width:100%;height:150px;font-size:16px;"
+                rows="10" cols="40" name="converted_text"></textarea>
+    </td>
+   </tr>
+   <tr>
+    <th colspan="2"> Equivalent HTML text</th>
+   <tr>
+    <td colspan="2">
+      <textarea style="width:100%;height:75px"
+                rows="5" cols="80" name="html_text" readOnly></textarea>
+    </td> </tr>
+  </form>
+ </table>
+
+<p><a href="index.htm">Back to the Indian Language Converter</a>
+
+<p>
+
+<table>
+ <td valign="top">
+ <table border>
+   <th colspan=12>The Vowels (સ્વર)</th>
+   <tr><td>a  <td class="mg">અ
+    <td>A, aa  <td class="mg">આ
+    <td>i  <td class="mg">ઇ<td>I, ee  <td class="mg">ઈ
+    <td>u  <td class="mg">ઉ
+    <td>U, oo  <td class="mg">ઊ
+   <tr><td>tR  <td class="mg">ઋ
+    <td>En  <td class="mg">&#2701;
+    <td>e  <td class="mg">એ
+    <td>ai  <td class="mg">ઐ
+    <td>Ao  <td class="mg">ઑ
+    <td>o  <td class="mg">ઓ
+    <tr><td>au  <td class="mg">ઔ
+    <td>tR  <td class="mg">ઋ
+    <td>Om <td class="mg">ૐ
+    <td>M  <td class="mg">અં
+    <td>H, &#58; <td class="mg">અઃ
+   </table>
+ <td>
+  <table border>
+   <th colspan=10>The Consonants (વ્યંજન)</th>
+   <tr><td>k  <td class="mg">ક
+    <td>kh  <td class="mg">ખ
+    <td>g  <td class="mg">ગ
+    <td>gh  <td class="mg">ઘ
+    <td>G  <td class="mg">ઙ
+   <tr><td>ch  <td class="mg">ચ
+    <td>Ch  <td class="mg">છ
+    <td>j  <td class="mg">જ
+    <td>jh  <td class="mg">ઝ
+    <td>nY  <td class="mg">ઞ
+   <tr><td>t  <td class="mg">ટ
+    <td>T  <td class="mg">ઠ
+    <td>d  <td class="mg">ડ
+    <td>D  <td class="mg">ઢ
+    <td>N  <td class="mg">ણ
+   <tr><td>th  <td class="mg">ત
+    <td>Th  <td class="mg">થ
+    <td>dh  <td class="mg">દ
+    <td>Dh  <td class="mg">ધ
+    <td>n  <td class="mg">ન
+   <tr><td>p  <td class="mg">પ
+    <td>ph  <td class="mg">ફ
+    <td>b  <td class="mg">બ
+    <td>bh, B, Bh  <td class="mg">ભ
+    <td>m  <td class="mg">મ
+   <tr><td>y  <td class="mg">ય
+    <td>r  <td class="mg">ર
+    <td>l  <td class="mg">લ
+    <td>L  <td class="mg">ળ
+    <td>v  <td class="mg">વ
+   <tr><td>sh  <td class="mg">શ
+    <td>Sh  <td class="mg">ષ
+    <td>s  <td class="mg">સ
+    <td>h  <td class="mg">હ
+    <td>kSh <td class="mg">ક્ષ
+   
+   <tr><td>z<td class="mg">જ્ઞ<td>&nbsp;<td class="mg">&nbsp;<td>&nbsp;<td class="mg">&nbsp;<td>&nbsp;<td class="mg">&nbsp;<td>&nbsp;<td class="mg">&nbsp;</table>
+</table>
+<table border="0" width="100%" id="table1">
+	<tr>
+		<td>
+		<p style="text-align: left"><b>અંગ્રેજી માંથી ભારતીય 
+		ભાષાઓ માં અનુવાદ કરવાનો આ પ્રોગ્રામ
+		<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">વિજય લક્ષ્મિનારાયણને</a> લખ્યો છે જેનું 
+		ગુજરાતી સંસ્કરણ <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#97;&#115;&#104;&#64;&#121;&#97;&#115;&#104;&#46;&#105;&#110;&#102;&#111;">યશ ગઢિયા</a>એ બનાવ્યું છે.<br>
+		આ પ્રોગ્રામ વડે ગુજરાતી શબ્દોનું ટાઇપિંગ તદ્દન સરળ બની જાય છે. <br>
+		અંગ્રેજી માંથી ગુજરાતીના કેટલાક ર્દષ્ટાંત જૂઓ:</b></td>
+	</tr>
+</table>
+
+<table border="1">
+	<tr>
+		<td>gujaraathee</td>
+		<td>ગુજરાતી</td>
+	</tr>
+	<tr>
+		<td>alaMkaara</td>
+		<td>અલંકાર</td>
+	</tr>
+	<tr>
+		<td>bhaaratha aapaNo dhesha Che.</td>
+		<td>ભારત આપણો દેશ છે.</td>
+	</tr>
+	<tr>
+		<td>parIkShaa</td>
+		<td>પરીક્ષા</td>
+	</tr>
+	<tr>
+		<td>pratheekShaa</td>
+		<td>પ્રતીક્ષા</td>
+	</tr>
+	<tr>
+		<td>yaza</td>
+		<td>&#2735;&#2716;&#2765;&#2718;</td>
+	</tr>
+	<tr>
+		<td>sMskaara</td>
+		<td>સંસ્કાર</td>
+	</tr>
+</table>
+
+<p><br>
+Happy Experimenting!
+
+<p>If you have any ideas please tell Yash: <b><a
+href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#97;&#115;&#104;&#64;&#121;&#97;&#115;&#104;&#46;&#105;&#110;&#102;&#111;">
+&#121;&#97;&#115;&#104;&#64;&#121;&#97;&#115;&#104;&#46;&#105;&#110;&#102;&#111;
+</a></b>
+
+<p>The code this site uses is <a href="ilc.zip">here.</a>  It is
+<a href="http://www.gnu.org/copyleft/gpl.html">free</a>
+ for use.
+
+</body>
+</html>

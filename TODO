@@ -1,0 +1,22 @@
+## $Id: TODO,v 1.3 2006-03-26 04:36:44 vijay Exp $
+
+These are the list of fixes/features that need to be made.  Contact me
+to add to this file.
+
+The requirements are not listed in any particular order
+
+* separate the Sanskrit and Hindi pages.  They are different enough to
+merit their own pages.
+
+* write a tool to generate html tables from the consonants and vowels
+  hashtables in the language files
+
+* make the letters in the table buttons that when clicked find their
+  way into the left box (the one where we type)
+
+  - Suggested by Shailendra Kesarwani
+
+* write an FAQ for the site?
+
+* get the Vowels and Consonants table on the same level
+
