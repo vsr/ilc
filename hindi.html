@@ -1,162 +1,81 @@
-<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Hindi - Indian Language Converter</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
 
-<!-- Copyright (c) 2006 Vijay Lakshminarayanan <liyer.vijay@gmail.com> -->
-<!-- Permission is granted to copy, distribute and/or modify this      -->
-<!-- document under the terms of the GNU Free Documentation License,   -->
-<!-- Version 1.2 or any later version published by the Free Software   -->
-<!-- Foundation; with no Invariant Sections, no Front-Cover Texts, and -->
-<!-- no Back-Cover Texts.  A copy of the license is included in the    -->
-<!-- section entitled "GNU Free Documentation License".                -->
+    <div class="off-canvas-wrap" data-offcanvas>
 
-<!-- 	$Id: hindi.html,v 1.5 2006-03-26 02:38:41 vijay Exp $	 -->
-<!-- 	Author: Vijay Lakshminarayanan	 -->
-<!-- 	$Date: 2006-03-26 02:38:41 $	 -->
+      <div class="inner-wrap">
 
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="css/languages.css" />
-  <title>English to Hindi/Sanskrit converter</title>
-  <script src="js/hindi.js"></script>
-  <script src="js/converter.js"></script>
-</head>
+        <nav class="tab-bar">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
+          <section class="middle tab-bar-section">
+            <h1 class="title">Hindi - Indian Language Converter</h1>
+          </section>
+        </nav>
 
-<body>
+        <aside class="left-off-canvas-menu">
 
-<h2 align="center">Transliterate to Sanskrit/Hindi</h2>
 
-<p>
- <table>
-  <form name="convarea">
-   <tr>
-    <th>Type your text here</th>
-    <th>See your results here</th>
-   <tr>
-    <td>
-      <textarea style="width:100%;height:150px"
-                name="many_words_text"
-                rows="10" cols="40"
-                onFocus="javascript:print_many_words()"
-                onKeyUp="javascript:print_many_words()">angrezee se hindhI</textarea>
-    </td>
-    <td>
-      <textarea style="width:100%;height:150px;font-size:16px;"
-                rows="10" cols="40" name="converted_text"></textarea>
-    </td>
-   </tr>
-   <tr>
-    <th colspan="2"> Equivalent HTML text</th>
-   <tr>
-    <td colspan="2">
-      <textarea style="width:100%;height:75px"
-                rows="5" cols="80" name="html_text" readOnly></textarea>
-    </td> </tr>
-  </form>
- </table>
+          <ul class="off-canvas-list">
+            <li><a href="index.html">Home</a></li>
+          </ul>
+          <ul class="off-canvas-list">
+            <li><label>Languages</label></li>
+            <li><a href="bengali.html">Bengali (&#2476;&#2434;&#2482;&#2494;)</a></li>
+            <li><a href="gujarati.html">Gujarati (&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;)</a></li>
+            <li><a href="hindi.html">Hindi (&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;)</a></li>
+            <li><a href="kannada.html">Kannada (&#3221;&#3240;&#3277;&#3240;&#3233;)</a></li>
+            <li><a href="malayalam.html">Malayalam (&#3374;&#3378;&#3375;&#3390;&#3379;&#3330)</a></li>
+            <li><a href="oriya.html">Oriya (&#2835;&#2908;&#2879;&#2822;)</a></li>
+            <li><a href="punjabi.html">Punjabi (&#2583;&#2625;&#2608;&#2606;&#2625;&#2582;&#2624;)</a></li>
+            <li><a href="hindi.html">Sanskrit (&#2360;&#2306;&#2360;&#2381;&#2325;&#2371;&#2340;&#2350;&#2381;)</a></li>
+            <li><a href="tamil.html">Tamil (&#2980;&#2990;&#3007;&#2996;&#3021;)</a></li>
+            <li><a href="telugu.html">Telugu (&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;)</a></li>
+          </ul>
 
-<p><a href="index.htm">Back to the Indian Language Converter</a>
+          <ul class="off-canvas-list">
+            <li><label>About</label></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
 
-<p>
+        </aside>
 
-<table>
- <td>
- <table border>
-   <th colspan=12>The Vowels</th>
-   <tr><td>a  <td class="mg">&#2309;
-    <td>A, aa  <td class="mg">&#2310;
-    <td>i  <td class="mg">&#2311;
-    <td>I, ee  <td class="mg">&#2312;
-    <td>u  <td class="mg">&#2313;
-    <td>U, oo  <td class="mg">&#2314;
-   <tr><td>tR  <td class="mg">&#2315;
-    <td>En  <td class="mg">&#2317;
-    <td>e  <td class="mg">&#2319;
-    <td>ai  <td class="mg">&#2320;
-    <td>Ao  <td class="mg">&#2321;
-   <tr><td>o  <td class="mg">&#2323;
-    <td>au  <td class="mg">&#2324;
-    <td>TR  <td class="mg">&#2400;
-    <td>AOM <td class="mg">&#2384;
-   <tr><td>AO  <td class="mg">&#2309;&#2305;
-    <td>M  <td class="mg">&#2309;&#2306;
-    <td>H, &#58; <td class="mg">&#2309;&#2307;
-    <td>aA   <td class="mg">&#2309;&#2365;
-   <tr><td>| <td class="mg">&#2404;
-    <td>|| <td class="mg">&#2405;
-  </table>
- <td>
-  <table border>
-   <th colspan=10>The Consonants</th>
-   <tr><td>k  <td class="mg">&#2325;
-    <td>kh  <td class="mg">&#2326;
-    <td>g  <td class="mg">&#2327;
-    <td>gh  <td class="mg">&#2328;
-    <td>G  <td class="mg">&#2329;
-   <tr><td>ch  <td class="mg">&#2330;
-    <td>Ch  <td class="mg">&#2331;
-    <td>j  <td class="mg">&#2332;
-    <td>jh  <td class="mg">&#2333;
-    <td>nY  <td class="mg">&#2334;
-   <tr><td>t  <td class="mg">&#2335;
-    <td>T  <td class="mg">&#2336;
-    <td>d  <td class="mg">&#2337;
-    <td>D  <td class="mg">&#2338;
-    <td>N  <td class="mg">&#2339;
-   <tr><td>th  <td class="mg">&#2340;
-    <td>Th  <td class="mg">&#2341;
-    <td>dh  <td class="mg">&#2342;
-    <td>Dh  <td class="mg">&#2343;
-    <td>n  <td class="mg">&#2344;
-   <tr><td>p  <td class="mg">&#2346;
-    <td>ph  <td class="mg">&#2347;
-    <td>b  <td class="mg">&#2348;
-    <td>bh, B, Bh  <td class="mg">&#2349;
-    <td>m  <td class="mg">&#2350;
-   <tr><td>y  <td class="mg">&#2351;
-    <td>r  <td class="mg">&#2352;
-    <td>l  <td class="mg">&#2354;
-    <td>v  <td class="mg">&#2357;
-   <tr><td>sh  <td class="mg">&#2358;
-    <td>Sh  <td class="mg">&#2359;
-    <td>s  <td class="mg">&#2360;
-   <tr><td>h  <td class="mg">&#2361;
-    <td>kSh <td class="mg">&#2325;&#2381;&#2359;
-   <tr><td>q  <td class="mg">&#2392;
-    <td>qh  <td class="mg">&#2393;
-    <td>gG  <td class="mg">&#2394;
-    <td>z  <td class="mg">&#2395;
-    <td>DdD  <td class="mg">&#2396;
-   <tr><td>RrR  <td class="mg">&#2397;
-    <td>f  <td class="mg">&#2398;
-    <td>Y  <td class="mg">&#2399;
-    <td>NnN  <td class="mg">&#2345;
-    <td>R  <td class="mg">&#2353;
-   <tr><td>LlL  <td class="mg">&#2356;
-    <td>L  <td class="mg">&#2355;
+        <section class="main-section">
 
-  </table>
-</table>
-<p>Happy Experimenting!
+          <div class="row">
+            <div class="small-12 columns">
+              <br/>
+              <form name="convarea" data-language="hindi">
+                  <textarea name="input_text" rows="10" cols="40" ></textarea>
+                  <textarea name="unicode_text" onfocus="this.select();" rows="10" cols="40" readonly></textarea>
+                  <textarea name="html_text" onfocus="this.select();" rows="5" cols="40" readonly></textarea>
+              </form>
 
-<p>I'm still searching for the ideal letter combinations to represent each
-syllable.  <br>If you have any ideas please tell me: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><u><b>&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</b></u></a>
 
-<p>
-For instance, I don't know if the letter combinations "kaaAO" or "kAAO" are <br>
-intuitive enough to write &#2325;&#2366;&#2305;.  Since I am neither a native
-speaker nor writer of <br>
-Hindi, I look forward to feedback from people who write Hindi often.
+            </div>
+          </div>
 
-<p>
-The same applies to the other language pages also.  If you can suggest an <br>
-improvement to any letter combination in any page, tell me.
+        </section>
 
-<p>
-The goal is to make writing in each language as intuitive as possible.
+        <a class="exit-off-canvas"></a>
 
-<p>The code this site uses is <a href="ilc.zip">here.</a>  It is
-<a href="http://www.gnu.org/copyleft/gpl.html">free</a>
- for use.
+      </div>
 
-</body>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/languages/converter.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

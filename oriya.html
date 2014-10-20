@@ -1,133 +1,81 @@
-<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Oriya - Indian Language Converter</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
 
-<!-- Copyright (c) 2006 Vijay Lakshminarayanan <liyer.vijay@gmail.com> -->
-<!-- Permission is granted to copy, distribute and/or modify this      -->
-<!-- document under the terms of the GNU Free Documentation License,   -->
-<!-- Version 1.2 or any later version published by the Free Software   -->
-<!-- Foundation; with no Invariant Sections, no Front-Cover Texts, and -->
-<!-- no Back-Cover Texts.  A copy of the license is included in the    -->
-<!-- section entitled "GNU Free Documentation License".                -->
+    <div class="off-canvas-wrap" data-offcanvas>
 
-<!-- 	$Id: oriya.html,v 1.6 2006-03-26 02:45:54 vijay Exp $	 -->
-<!-- 	Author: Vijay Lakshminarayanan	 -->
-<!-- 	$Date: 2006-03-26 02:45:54 $	 -->
+      <div class="inner-wrap">
 
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="css/languages.css" />
-  <title>English to Oriya converter</title>
-  <script src="js/oriya.js"></script>
-  <script src="js/converter.js"></script>
-</head>
+        <nav class="tab-bar">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
+          <section class="middle tab-bar-section">
+            <h1 class="title">Oriya - Indian Language Converter</h1>
+          </section>
+        </nav>
 
-<body>
+        <aside class="left-off-canvas-menu">
 
-<h2 align="center">Transliterate to Oriya</h2>
 
-<p>
- <table>
-  <form name="convarea">
-   <tr>
-    <th>Type your text here</th>
-    <th>See your results here</th>
-   <tr>
-    <td>
-      <textarea style="width:100%;height:150px"
-                name="many_words_text"
-                rows="10" cols="40"
-                onFocus="javascript:print_many_words()"
-                onKeyUp="javascript:print_many_words()">oRiaa</textarea>
-    </td>
-    <td>
-      <textarea style="width:100%;height:150px;font-size:15px"
-                rows="10" cols="40" name="converted_text"></textarea>
-    </td>
-   </tr>
-   <tr>
-    <th colspan="2"> Equivalent HTML text </th>
-   <tr>
-    <td colspan="2">
-      <textarea style="width:100%;height:75px"
-                rows="5" cols="80" name="html_text" readOnly></textarea>
-    </td> </tr>
-  </form>
- </table>
+          <ul class="off-canvas-list">
+            <li><a href="index.html">Home</a></li>
+          </ul>
+          <ul class="off-canvas-list">
+            <li><label>Languages</label></li>
+            <li><a href="bengali.html">Bengali (&#2476;&#2434;&#2482;&#2494;)</a></li>
+            <li><a href="gujarati.html">Gujarati (&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;)</a></li>
+            <li><a href="hindi.html">Hindi (&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;)</a></li>
+            <li><a href="kannada.html">Kannada (&#3221;&#3240;&#3277;&#3240;&#3233;)</a></li>
+            <li><a href="malayalam.html">Malayalam (&#3374;&#3378;&#3375;&#3390;&#3379;&#3330)</a></li>
+            <li><a href="oriya.html">Oriya (&#2835;&#2908;&#2879;&#2822;)</a></li>
+            <li><a href="punjabi.html">Punjabi (&#2583;&#2625;&#2608;&#2606;&#2625;&#2582;&#2624;)</a></li>
+            <li><a href="hindi.html">Sanskrit (&#2360;&#2306;&#2360;&#2381;&#2325;&#2371;&#2340;&#2350;&#2381;)</a></li>
+            <li><a href="tamil.html">Tamil (&#2980;&#2990;&#3007;&#2996;&#3021;)</a></li>
+            <li><a href="telugu.html">Telugu (&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;)</a></li>
+          </ul>
 
-<p><a href="index.htm">Back to the Indian Language Converter</a>
+          <ul class="off-canvas-list">
+            <li><label>About</label></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
 
-<p>
+        </aside>
 
-<table>
- <td>
- <table border>
-   <th colspan=12>The Vowels</th>
-   <tr><td>a  <td class="mg">&#2821;
-    <td>aa  <td class="mg">&#2822;
-    <td>i  <td class="mg">&#2823;
-    <td>ee  <td class="mg">&#2824;
-    <td>u  <td class="mg">&#2825;
-    <td>oo  <td class="mg">&#2826;
-   <tr><td>rR  <td class="mg">&#2827;
-    <td>e  <td class="mg">&#2831;
-    <td>ai  <td class="mg">&#2832;
-    <td>o  <td class="mg">&#2835;
-    <td>au  <td class="mg">&#2836;
-    <td>rRr  <td class="mg">&#2912;
-   <tr><td>Ahn  <td class="mg">&#2817;  <!-- chandrabind -->
-    <td>Am  <td class="mg">&#2818;  <!-- anusvara -->
-    <td>Ahh  <td class="mg">&#2819; <!-- visarga -->
-    <td>An  <td class="mg">&#2876;  <!-- nukta -->
-    <td>A   <td class="mg">&#2877;  <!-- avagraha -->
-  </table>
- <td>
-  <table border>
-   <th colspan=10>The Consonants</th>
-   <tr><td>k  <td class="mg">&#2837;
-    <td>kh  <td class="mg">&#2838;
-    <td>g  <td class="mg">&#2839;
-    <td>gh  <td class="mg">&#2840;
-    <td>ngG  <td class="mg">&#2841;
-   <tr><td>ch  <td class="mg">&#2842;
-    <td>Ch  <td class="mg">&#2843;
-    <td>j  <td class="mg">&#2844;
-    <td>jh  <td class="mg">&#2845;
-    <td>ny  <td class="mg">&#2846;
-   <tr><td>t  <td class="mg">&#2847;
-    <td>T  <td class="mg">&#2848;
-    <td>d  <td class="mg">&#2849;
-    <td>D  <td class="mg">&#2850;
-    <td>N  <td class="mg">&#2851;
-   <tr><td>th  <td class="mg">&#2852;
-    <td>Th  <td class="mg">&#2853;
-    <td>dh  <td class="mg">&#2854;
-    <td>Dh  <td class="mg">&#2855;
-    <td>n  <td class="mg">&#2856;
-   <tr><td>p  <td class="mg">&#2858;
-    <td>ph  <td class="mg">&#2859;
-    <td>b, v  <td class="mg">&#2860;
-    <td>bh, B, Bh  <td class="mg">&#2861;
-    <td>m  <td class="mg">&#2862;
-   <tr><td>y  <td class="mg">&#2863;
-    <td>r  <td class="mg">&#2864;
-    <td>l  <td class="mg">&#2866;
-    <td>L  <td class="mg">&#2867;
-   <tr><td>sh  <td class="mg">&#2870;
-    <td>Sh  <td class="mg">&#2871;
-    <td>s  <td class="mg">&#2872;
-    <td>h  <td class="mg">&#2873;
-   <tr><td>R  <td class="mg">&#2908;
-    <td>Rr  <td class="mg">&#2909;
-    <td>Y  <td class="mg">&#2911;
-  </table>
-</table>
-<p>Happy Experimenting!
+        <section class="main-section">
 
-<p>I'm still searching for the ideal letter combinations to represent each syllable.<br>
-If you have any ideas please tell me: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><u><b>&#108;&#105;&#121;&#101;&#114;&#46;&#118;&#105;&#106;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</b></u></a>
+          <div class="row">
+            <div class="small-12 columns">
+              <br/>
+              <form name="convarea" data-language="oriya">
+                  <textarea name="input_text" rows="10" cols="40" ></textarea>
+                  <textarea name="unicode_text" onfocus="this.select();" rows="10" cols="40" readonly></textarea>
+                  <textarea name="html_text" onfocus="this.select();" rows="5" cols="40" readonly></textarea>
+              </form>
 
-<p>The code this site uses is <a href="ilc.zip">here.</a>  It is
-<a href="http://www.gnu.org/copyleft/gpl.html">free</a> for use.
 
-</body>
+            </div>
+          </div>
+
+        </section>
+
+        <a class="exit-off-canvas"></a>
+
+      </div>
+
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/languages/converter.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

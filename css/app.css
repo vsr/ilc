@@ -1,0 +1,38 @@
+/* app.css */
+
+
+section.main-section {
+    min-height: 42em;
+    margin-bottom: 2em;
+}
+
+.page-list .button {
+    line-height: 2em;
+}
+
+span.mg {
+    display: block;
+}
+
+table tr td{
+    text-align: center;
+}
+table td {
+    border: 1px solid #ddd;
+    background-color: aliceblue;
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: none;
+}
+
+.vowels-block, .consonants-block {
+    overflow-x: auto;
+}
+
+form textarea {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
