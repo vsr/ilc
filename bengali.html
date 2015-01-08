@@ -13,8 +13,8 @@
     <div class="off-canvas-wrap" data-offcanvas>
 
       <div class="inner-wrap">
-
-        <nav class="tab-bar">
+        <div class="sticky">
+        <nav class="tab-bar" data-topbar role="navigation">
           <section class="left-small">
             <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
           </section>
@@ -22,7 +22,7 @@
             <h1 class="title">Bengali - Indian Language Converter</h1>
           </section>
         </nav>
-
+        </div>
         <aside class="left-off-canvas-menu">
 
 
@@ -32,13 +32,13 @@
           <ul class="off-canvas-list">
             <li><label>Languages</label></li>
             <li><a href="bengali.html">Bengali (&#2476;&#2434;&#2482;&#2494;)</a></li>
-            <li><a href="gujarati.html">Gujarati (&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;)</a></li>
+            <li class="unicode-font"><a href="gujarati.html">Gujarati (&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;)</a></li>
             <li><a href="hindi.html">Hindi (&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;)</a></li>
             <li><a href="kannada.html">Kannada (&#3221;&#3240;&#3277;&#3240;&#3233;)</a></li>
-            <li><a href="malayalam.html">Malayalam (&#3374;&#3378;&#3375;&#3390;&#3379;&#3330)</a></li>
-            <li><a href="oriya.html">Oriya (&#2835;&#2908;&#2879;&#2822;)</a></li>
-            <li><a href="punjabi.html">Punjabi (&#2583;&#2625;&#2608;&#2606;&#2625;&#2582;&#2624;)</a></li>
-            <li><a href="hindi.html">Sanskrit (&#2360;&#2306;&#2360;&#2381;&#2325;&#2371;&#2340;&#2350;&#2381;)</a></li>
+            <li><a href="malayalam.html">Malayalam (&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;)</a></li>
+            <li class="unicode-font"><a href="oriya.html">Oriya (&#2835;&#2908;&#2879;&#2822;)</a></li>
+            <li class="unicode-font"><a href="punjabi.html">Punjabi (&#2583;&#2625;&#2608;&#2606;&#2625;&#2582;&#2624;)</a></li>
+            <li><a href="sanskrit.html">Sanskrit (&#2360;&#2306;&#2360;&#2381;&#2325;&#2371;&#2340;&#2350;&#2381;)</a></li>
             <li><a href="tamil.html">Tamil (&#2980;&#2990;&#3007;&#2996;&#3021;)</a></li>
             <li><a href="telugu.html">Telugu (&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;)</a></li>
           </ul>
@@ -62,10 +62,98 @@
                   <textarea name="html_text" onfocus="this.select();" rows="5" cols="40" readonly></textarea>
               </form>
 
-
             </div>
           </div>
 
+          <div class="row">
+
+            <div class="small-12 large-6 vowels-block columns">
+
+              <table border width="100%">
+                <caption>The Vowels</caption>
+                <tr>
+                  <td><span class="mg">&#2437;</span><br/>a</td>
+                  <td><span class="mg">&#2438;</span><br/>A,&nbsp;aa  </td>
+                  <td><span class="mg">&#2439;</span><br/>i</td>
+                  <td><span class="mg">&#2440;</span><br/>I,&nbsp;ee</td>
+                  <td><span class="mg">&#2441;</span><br/>u</td>
+                  <td><span class="mg">&#2442;</span><br/>U,&nbsp;oo</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2443;</span><br/>Rr</td>
+                  <td><span class="mg">&#2528;</span><br/>RrR</td>
+                  <td><span class="mg">&#2447;</span><br/>e</td>
+                  <td><span class="mg">&#2448;</span><br/>ai</td>
+                  <td><span class="mg">&#2451;</span><br/>o</td>
+                  <td><span class="mg">&#2452;</span><br/>au</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2437;&#2433;</span><br/>AO</td>
+                  <td><span class="mg">&#2437;&#2434;</span><br/>M</td>
+                  <td><span class="mg">&#2437;&#2435;</span><br/>H</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="small-12 large-6 consonants-block columns">
+              <table border  width="100%">
+                <caption>The Consonants</caption>
+                <tr>
+                  <td><span class="mg">&#2453;</span><br/>k</td>
+                  <td><span class="mg">&#2454;</span><br/>kh</td>
+                  <td><span class="mg">&#2455;</span><br/>g</td>
+                  <td><span class="mg">&#2456;</span><br/>gh</td>
+                  <td><span class="mg">&#2457;</span><br/>G</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2458;</span><br/>ch</td>
+                  <td><span class="mg">&#2459;</span><br/>Ch</td>
+                  <td><span class="mg">&#2460;</span><br/>j</td>
+                  <td><span class="mg">&#2461;</span><br/>jh</td>
+                  <td><span class="mg">&#2462;</span><br/>nY</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2463;</span><br/>t</td>
+                  <td><span class="mg">&#2464;</span><br/>T</td>
+                  <td><span class="mg">&#2465;</span><br/>d</td>
+                  <td><span class="mg">&#2466;</span><br/>D</td>
+                  <td><span class="mg">&#2467;</span><br/>N</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2468;</span><br/>th</td>
+                  <td><span class="mg">&#2469;</span><br/>Th</td>
+                  <td><span class="mg">&#2470;</span><br/>dh</td>
+                  <td><span class="mg">&#2471;</span><br/>Dh</td>
+                  <td><span class="mg">&#2472;</span><br/>n</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2474;</span><br/>p</td>
+                  <td><span class="mg">&#2475;</span><br/>ph</td>
+                  <td><span class="mg">&#2476;</span><br/>b,&nbsp;v</td>
+                  <td><span class="mg">&#2477;</span><br/>bh,&nbsp;B,&nbsp;Bh</td>
+                  <td><span class="mg">&#2478;</span><br/>m</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2479;</span><br/>y</td>
+                  <td><span class="mg">&#2480;</span><br/>r</td>
+                  <td><span class="mg">&#2482;</span><br/>l</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2486;</span><br/>sh</td>
+                  <td><span class="mg">&#2487;</span><br/>Sh</td>
+                  <td><span class="mg">&#2488;</span><br/>s</td>
+                  <td><span class="mg">&#2489;</span><br/>h</td>
+                </tr>
+                <tr>
+                  <td><span class="mg">&#2524;</span><br/>rR</td>
+                  <td><span class="mg">&#2525;</span><br/>rRr</td>
+                  <td><span class="mg">&#2527;</span><br/>Y</td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+          <br/>
         </section>
 
         <a class="exit-off-canvas"></a>

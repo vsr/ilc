@@ -2,8 +2,9 @@
 
 
 section.main-section {
-    min-height: 42em;
-    margin-bottom: 2em;
+    min-height: 32.8125rem;
+    margin-bottom: 2.8125rem;
+    margin-top: 2.8125rem;
 }
 
 .page-list .button {
@@ -36,3 +37,18 @@ form textarea {
     margin-right: auto;
 }
 
+
+@font-face {
+  font-family: 'Code2000';
+  src: url('../img/CODE2000.TTF')  format('truetype');
+}
+
+.unicode-font {
+    font-family: "Code2000", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif!important;
+}
+
+
+.tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
