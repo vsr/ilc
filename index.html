@@ -4,92 +4,64 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Indian Language Converter</title>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/app.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
 
-    <div class="off-canvas-wrap" data-offcanvas>
 
-      <div class="inner-wrap">
-        <div class="sticky">
-        <nav class="tab-bar" data-topbar role="navigation">
-          <section class="left-small">
-            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-          </section>
-          <section class="middle tab-bar-section">
-            <h1 class="title">Indian Language Converter</h1>
-          </section>
-        </nav>
-        </div>
-        <aside class="left-off-canvas-menu">
+<div class="container header-container">
 
-
-          <ul class="off-canvas-list">
-            <li><a href="index.html">Home</a></li>
-          </ul>
-          <ul class="off-canvas-list unicode-font">
-            <li><label>Languages</label></li>
-            <li><a href="bengali.html">Bengali (&#2476;&#2434;&#2482;&#2494;)</a></li>
-            <li><a href="gujarati.html">Gujarati (&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;)</a></li>
-            <li><a href="hindi.html">Hindi (&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;)</a></li>
-            <li><a href="kannada.html">Kannada (&#3221;&#3240;&#3277;&#3240;&#3233;)</a></li>
-            <li><a href="malayalam.html">Malayalam (&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;)</a></li>
-            <li><a href="oriya.html">Oriya (&#2835;&#2908;&#2879;&#2822;)</a></li>
-            <li><a href="punjabi.html">Punjabi (&#2583;&#2625;&#2608;&#2606;&#2625;&#2582;&#2624;)</a></li>
-            <li><a href="sanskrit.html">Sanskrit (&#2360;&#2306;&#2360;&#2381;&#2325;&#2371;&#2340;&#2350;&#2381;)</a></li>
-            <li><a href="tamil.html">Tamil (&#2980;&#2990;&#3007;&#2996;&#3021;)</a></li>
-            <li><a href="telugu.html">Telugu (&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;)</a></li>
-          </ul>
-
-          <ul class="off-canvas-list">
-            <li><label>About</label></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="help.html">Help</a></li>
-          </ul>
-
-        </aside>
-
-        <section class="main-section">
-
-          <div class="row">
-            <div class="small-12 columns">
-              <br/>
-              <div class="panel callout radius">
-                <p>Indian Language Converter is a tool to convert latin/roman (english letters) to Indic scripts.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="small-12 columns">
-              <br/>
-              <ul class="page-list inline-list button-group unicode-font">
-                <li><a class="small button" href="bengali.html">Bengali (&#2476;&#2434;&#2482;&#2494;)</a></li>
-                <li><a class="small button" href="gujarati.html">Gujarati (&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;)</a></li>
-                <li><a class="small button" href="hindi.html">Hindi (&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;)</a></li>
-                <li><a class="small button" href="kannada.html">Kannada (&#3221;&#3240;&#3277;&#3240;&#3233;)</a></li>
-                <li><a class="small button" href="malayalam.html">Malayalam (&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;)</a></li>
-                <li><a class="small button" href="oriya.html">Oriya (&#2835;&#2908;&#2879;&#2822;)</a></li>
-                <li><a class="small button" href="punjabi.html">Punjabi (&#2583;&#2625;&#2608;&#2606;&#2625;&#2582;&#2624;)</a></li>
-                <li><a class="small button" href="sanskrit.html">Sanskrit (&#2360;&#2306;&#2360;&#2381;&#2325;&#2371;&#2340;&#2350;&#2381;)</a></li>
-                <li><a class="small button" href="tamil.html">Tamil (&#2980;&#2990;&#3007;&#2996;&#3021;)</a></li>
-                <li><a class="small button" href="telugu.html">Telugu (&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;)</a></li>
-              </ul>
-            </div>
-          </div>
-
-        </section>
-
-        <a class="exit-off-canvas"></a>
-
+  <header class="nav-header">
+    <nav class="">
+      <h1><img src="img/rect3890-0.png" alt="Indian Language Converter" class="logo" /><span class="title">Indian Language Converter</span></h1>
+      <div class="select-box">
+        <select  name="lang-selector">
+          <option>Bengali</option>
+          <option>Gujarati</option>
+          <option>Hindi</option>
+          <option>Kannada</option>
+          <option>Malayalam</option>
+          <option>Oriya</option>
+        </select>
       </div>
+    </nav>
+  </header>
 
-    </div>
+</div>
+<div class="container content-container">
+
+<section class="content">
+              <form name="convarea" data-language="hindi">
+                  <textarea name="input_text" rows="10" ></textarea>
+                  <textarea name="unicode_text" onfocus="this.select();" rows="10"  readonly></textarea>
+                  <p>
+                    <label><input type="checkbox" />Show character table</label>
+                  </p>
+                  <textarea name="html_text" onfocus="this.select();" rows="5"  readonly></textarea>
+              </form>
+
+
+
+
+</section>
+
+<footer  class="">
+  <p>
+<a class="" href="#">About</a>
+</p>
+</footer>
+
+
+</div>
+
+
+
 
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="js/languages/converter.js"></script>
     <script src="js/app.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   </body>
 </html>

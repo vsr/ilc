@@ -16,11 +16,22 @@
   s.src = 'js/languages/'+language+'.js';
   s.onload = function(){
     $input_text.value = ILC.data[language].default_input;
+    convert();
   };
   document.body.appendChild(s);
 
   $input_text.addEventListener('keyup', convert);
   $input_text.addEventListener('focus', convert);
+
+  $form.show_html.addEventListener('change', function(){
+    this.checked ? $form.classList.add('show_html') : $form.classList.remove('show_html');
+  });
+
+
 }());
 
-$(document).foundation();
+
+
+$(function(){
+
+});

@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #F9F9F9;
+}
+.container {
+    width: 100%;
+    min-width: 240px;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.header-container {
+    max-width: initial;
+    z-index: 7;
+    position: fixed;
+}
+.content-container {
+    padding-top: 56px;
+    z-index: 3;
+}
+
+header, section, footer {
+    width: 100%;
+}
+
+.nav-header {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    height: 56px;
+    background-color: #FFF;
+    color: #222;
+    box-shadow: 0 4px 12px #EEE;
+}
+
+.nav-header h1 {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em;
+    float: left;
+}
+
+.nav-header .logo, .nav-header .title {
+    float: left;
+    margin: 16px;
+}
+
+.nav-header .logo {
+    width: 24px;
+}
+
+.nav-header .title {
+    margin-left: 0;
+    display: none;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.nav-header .select-box {
+    float: left;
+    line-height: 56px;
+    font-size: 1.5em;
+}
+
+.nav-header select[name=lang-selector] {
+
+    border: 0;
+    background-color: transparent;
+
+}
+.nav-header select[name=lang-selector]:focus {
+    outline: none;
+}
+
+
+.content {
+    min-height: 40em;
+    position: relative;
+    z-index: 5;
+}
+
+form[name=convarea] {
+
+}
+
+form label {
+    margin: 16px;
+}
+
+textarea[name=input_text],
+textarea[name=unicode_text],
+textarea[name=html_text] {
+    width: 100%;
+    padding: 8px;
+    display: block;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.12)
+}
+
+textarea[name=input_text]:focus,
+textarea[name=unicode_text]:focus,
+textarea[name=html_text]:focus {
+    border-color: rgba(63, 81, 181, 0.12);
+}
+
+textarea[name=unicode_text],
+textarea[name=html_text] {
+    background-color: #FFF;
+    width: 96%;
+    margin: 5px auto;
+    border: 0;
+    box-shadow: 0 4px 10px #EEE;
+}
+
+textarea[name=input_text] {
+    border-top: 0;
+}
+
+textarea[name=unicode_text] {
+
+}
+
+textarea[name=html_text] {
+    display: none;
+    font-family: monospace;
+    font-size: 0.8em;
+}
+
+.show_html textarea[name=html_text] {
+    display: inherit;
+}
+
+
+@media only screen and (min-width:45em) {
+
+.content-container {
+    padding-top: 64px;
+}
+
+
+    .nav-header {
+        height: 64px;
+    }
+    .nav-header .title {
+        display: initial;
+    }
+
+    .nav-header h1, .nav-header .select-box {
+        padding: 4px;
+    }
+
+
+}
