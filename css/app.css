@@ -6,7 +6,7 @@ body {
     padding: 0;
     font-family: "Roboto", sans-serif;
     color: #333;
-    background-color: #F9F9F9;
+    background-color: #EEEEEE;
 }
 .container {
     width: 100%;
@@ -30,7 +30,6 @@ header, section, footer {
 }
 
 .nav-header {
-    overflow: hidden;
     position: relative;
     z-index: 10;
     height: 56px;
@@ -65,6 +64,7 @@ header, section, footer {
 .nav-header .select-box {
     float: left;
     line-height: 56px;
+    height: 56px;
     font-size: 1.5em;
 }
 
@@ -78,6 +78,108 @@ header, section, footer {
     outline: none;
 }
 
+.nav-header .more-block {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em;
+    float: right;
+    height: 56px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+    display: inline-block;
+}
+
+.nav-header .more-icon {
+    background-image: url('../img/ic_more_vert_black_48dp.png');
+    background-position: 0 0;
+    background-size: 24px;
+}
+.more-menu-list {
+    display: none;
+    position: fixed;
+    top: -12px;
+    right: 8px;
+    min-width: 8em;
+    list-style-type: none;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0px 0px 5px #aaa;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.more-menu-list li {
+    font-size: 16px;
+    line-height: 1.65em;
+    padding: 0.5em;
+}
+.more-menu-list li:active {
+    background-color: #eee;
+}
+
+
+.select-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.lang-menu-list {
+     display: none;
+
+     position: absolute;
+
+     top: -20px;
+
+     left: 0;
+    list-style-type: none;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0px 0px 12px #aaa;
+     max-height: 10em;
+     overflow-y: scroll;
+     min-height: 6em;
+     width: 10em;
+}
+
+
+.lang-menu-list li {
+    line-height: 1.65em;
+    padding: 0.5em;
+}
+.lang-menu-list li:active, .lang-menu-list li.active {
+    background-color: #eee;
+}
+
+.dropdown-icon {
+     background-image: url('../img/ic_arrow_drop_down_black_48dp.png');
+    background-position: 0 0;
+    background-size: 24px;
+}
+
+.selected-lang {
+    display: inline-block;
+    float: left;
+}
+/*
+
+
+
+    width: 24px;
+    height: 24px;
+    background-image: url('img/ic_more_vert_black_48dp.png');
+    float: right;
+    margin: 24px;
+    background-color: #F9F9F9;
+    background-position: 0 0;
+    background-size: 24px;
+
+*/
 
 .content {
     min-height: 40em;
@@ -134,6 +236,18 @@ textarea[name=html_text] {
 
 .show_html textarea[name=html_text] {
     display: inherit;
+}
+
+
+.character-table-section {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 5px;
+    background-color: #fafafa;
+}
+
+.character-table-section h3 {
+    font-size: 1em;
 }
 
 
