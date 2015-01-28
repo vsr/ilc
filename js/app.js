@@ -57,6 +57,11 @@ $('.nav-header').on('click', '.more-icon', function(ev){
 
 
 
+$('.accordion-header').on('click', function(){
+  $(this).next('.accordion-content').slideToggle();
+});
+
+
 
   $('body').on('click', function(ev){
       console.log('body click', ev);

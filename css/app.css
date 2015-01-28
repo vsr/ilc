@@ -126,6 +126,8 @@ header, section, footer {
 .select-box {
     position: relative;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
 }
 
 .lang-menu-list {
@@ -239,16 +241,38 @@ textarea[name=html_text] {
 }
 
 
+.accordion-header {
+    padding: 0;
+    background-color: #fcfcfc;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.accordion-content {
+padding: 5px 10px;
+}
+
 .character-table-section {
     width: 100%;
     margin: 0 auto 30px auto;
-    padding: 5px;
+    padding: 0;
     background-color: #fafafa;
+    overflow: hidden;
 }
 
 .character-table-section h3 {
     font-size: 1em;
+    float: left;
+    display: inline-block;
 }
+
+.character-block {
+    width: 45%;
+    padding: 1em;
+    float: left;
+    text-align: center;
+}
+
 
 
 @media only screen and (min-width:45em) {
