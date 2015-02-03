@@ -59,7 +59,7 @@ $('.nav-header').on('click', '.more-icon', function(ev){
 
 $('.accordion-header').on('click', function(){
   $(this).next('.accordion-content').slideToggle();
-});
+}).next('.accordion-content').hide();
 
 
 

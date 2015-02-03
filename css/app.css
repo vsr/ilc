@@ -243,17 +243,21 @@ textarea[name=html_text] {
 
 .accordion-header {
     padding: 0;
-    background-color: #fcfcfc;
+    background-color: #E4E5EA;
     cursor: pointer;
     overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
 }
 
 .accordion-content {
 padding: 5px 10px;
+background-color: #EAECF4;
+  overflow: hidden;
 }
 
 .character-table-section {
-    width: 100%;
+    width: 98%;
     margin: 0 auto 30px auto;
     padding: 0;
     background-color: #fafafa;
@@ -264,10 +268,12 @@ padding: 5px 10px;
     font-size: 1em;
     float: left;
     display: inline-block;
+    text-indent: 1em;
+    margin: 0.5em 0;
 }
 
 .character-block {
-    width: 45%;
+    width: 90%;
     padding: 1em;
     float: left;
     text-align: center;
@@ -279,6 +285,9 @@ padding: 5px 10px;
 
 .content-container {
     padding-top: 64px;
+}
+.character-block {
+    width: 45%;
 }
 
 
