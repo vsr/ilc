@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.hindi = {
+    ILC.languages.hi = {
+        code: "hi",
+        name: "Hindi",
         vowels: "(A((o)|(O))?)|(a((A)|(a)|(u)|(i))?)|(En)|(e(e)?)|(I)|(H)|(TR)|(M)|(o(o)?)|(tR)|(i)|(U)|(u)|([:])|([|]([|])?)",
         consonants: "(Ch)|(D(dD|h)?)|(G)|(L(lL)?)|(N(nN)?)|(R(rR)?)|(Sh)|(Th?)|(Y)|(bh?)|(ch)|(dh?)|(f)|(g(h|G)?)|(h)|(jh?)|(kh?)|(l)|(m)|(nY?)|(ph?)|(qh?)|(r)|(sh?)|(th?)|(v)|(y)|(z)|(Bh?)",
         letter_codes: {

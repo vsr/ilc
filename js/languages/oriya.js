@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.oriya = {
+    ILC.languages.or = {
+        code: "or",
+        name: "Oriya",
         vowels: "(A((h(h|n))|(m)|(n))?)|(a(a|i|u)?)|(ee?)|(i)|(oo?)|(rRr?)|(u)",
         consonants: "(Ch)|(Dh?)|(L)|(N)|(Rr?)|(Sh)|(Th?)|(Y)|(bh?)|(ch)|(dh?)|(gh?)|(h)|(jh?)|(kh?)|(l)|(m)|(n(g|y)?)|(ph?)|(r)|(sh?)|(th?)|(y)|(v)",
         letter_codes: {

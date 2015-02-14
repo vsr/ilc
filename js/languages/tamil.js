@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.tamil = {
+    ILC.languages.ta = {
+        code: "ta",
+        name: "Tamil",
         vowels: "(a(a|i|e|u)?)|(ee?)|(i)|(o(o|a)?)|(u)|(A(hh)?)|(E)|(I)|(O)|(U)|(H)",
         consonants: "(bh?)|(ch?)|(dh?)|(f)|(g)|(h)|(j)|(kh?)|(l)|(L)|(m)|(n(N|G|Y)?)|(N)|(p)|(q)|(r)|(R)|(sh?)|(th?)|(v)|(w)|(y)|(zh)",
         letter_codes: {

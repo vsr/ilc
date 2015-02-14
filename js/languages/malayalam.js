@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.malayalam = {
+    ILC.languages.ml = {
+        code: "ml",
+        name: "Malayalam",
         vowels: "(a(a|e|i|u)?)|(i)|(ee?)|(u)|(o(o|a)?)|(Rr)|(Am)|(Ahh)",
         consonants: "(bh?)|(Bh?)|(ch?)|(Ch?)|(dh?)|(D(h|H)?)|(f)|(g)|(Gh?)|(h)|(j)|(Jh?)|(k)|(Kh?)|(l)|(L)|(m)|(N)|(n(y|g)?)|(ph?)|(r)|(R)|(th?)|(T)|(sh?)|(Sh)|(v)|(y)|(zh)",
         letter_codes: {

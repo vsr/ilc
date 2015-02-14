@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.kannada = {
+    ILC.languages.kn = {
+        code: "kn",
+        name: "Kannada",
         vowels: "(A)|(a((a)|(i)|(e)|(u))?)|(E)|(o((a)|(o))?)|(I)|(H)|(M)|(O)|(i)|(U)|(TR)|(e(e)?)|(u)|(tR)",
         consonants: "(Ch)|(B(h)?)|(D(h)?)|(K(h)?)|(J(h)?)|(L)|(N)|(Sh)|(T(h)?)|(ch)|(b(h)?)|(d(h)?)|(g(h)?)|(f)|(h)|(k(h)?)|(j(h)?)|(m)|(l)|(n((Y)|(G))?)|(p(h)?)|(s(h)?)|(r(R)?)|(t(h)?)|(v)|(w)|(y)",
         letter_codes: {

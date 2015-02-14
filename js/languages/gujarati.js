@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.gujarati = {
+    ILC.languages.gu = {
+        code: "gu",
+        name: "Gujarati",
         vowels: "(A((o)|(O))?)|(a((A)|(a)|(u)|(i))?)|(En)|(e(e)?)|(I)|(H)|(TR)|(M)|(o(o)?)|(tR)|(i)|(U)|(u)|([:])|([|]([|])?)|(Om)",
         consonants: "(Ch)|(D(dD|h)?)|(G)|(L(lL)?)|(N(nN)?)|(R(rRU)?)|(Sh)|(Th?)|(Y)|(bh?)|(ch)|(dh?)|(f)|(g(h|G)?)|(h)|(jh?)|(kh?)|(l)|(m)|(nY?)|(ph?)|(qh?)|(r)|(sh?)|(th?)|(v)|(y)|(z)|(Bh?)",
         letter_codes: {

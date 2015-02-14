@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.punjabi = {
+    ILC.languages.pa = {
+        code: "pa",
+        name: "Punjabi",
         vowels: "(An)|(a(a|e|i|u)?)|(ee?)|(i)|(o(a|o)?)|(u)",
         consonants: "(Bh?)|(Ch)|(Dh?)|(Gh?)|(Kh)|(L)|(N)|(R)|(Sh)|(Th?)|(bh?)|(ch)|(dh?)|(f)|(gh?)|(h)|(jh?)|(kh?)|(l)|(m)|(n(G|y)?)|(ph?)|(q)|(r)|(sh?)|(th?)|(v)|(y)|(z)",
         letter_codes: {

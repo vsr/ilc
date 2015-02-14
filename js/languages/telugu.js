@@ -1,7 +1,9 @@
 (function(ILC){
     "use strict";
 
-    ILC.data.telugu = {
+    ILC.languages.te = {
+        code: "te",
+        name: "Telugu",
         vowels: "(A(O)?)|(a((a)|(i)|(e)|(u))?)|(E)|(I)|(H)|(TR)|(M)|(O)|(tR)|(i)|(U)|(o((a)|(o))?)|(e(e)?)|(u)|(\\:)",
         consonants: "(ch)|(r)|(b(h)?)|(B(h)?)|(D(h)?)|(G)|(K(h)?)|(J(h)?)|(L)|(N)|(R)|(T(h)?)|(Ch)|(d(h)?)|(g(h)?)|(h)|(k(h)?)|(j(h)?)|(m)|(l)|(n(Y)?)|(p(h)?)|(s(h)?)|(Sh)|(t(h)?)|(v)|(y)",
         letter_codes: {
