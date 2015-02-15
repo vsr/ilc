@@ -179,7 +179,7 @@ header, section, footer {
     padding: 0.5em;
 }
 
-.lang-menu-list li:active, .lang-menu-list li.active {
+.lang-menu-list li.active {
     background-color: hsl(0, 0%, 90%);
 }
 
@@ -350,7 +350,14 @@ footer {
     min-height: 64px;
 }
 
-
+.content-card {
+    width: 98%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 90%);
+    box-shadow: 0 0px 5px hsl(0, 0%, 65%);
+    padding: 0 8px;
+}
 
 
 @media only screen and (min-width: 45em) {

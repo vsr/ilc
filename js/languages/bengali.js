@@ -1,7 +1,5 @@
-console.log("bengali 1");
 (function(ILC){
   "use strict";
-console.log("bengali: before adding");
   ILC.languages.bn = {
     code: "bn",
     name: "Bengali",
@@ -81,7 +79,4 @@ console.log("bengali: before adding");
     },
     default_input: "bMlaa"
   };
-
-console.log("bengali: after adding");
 }(window.ILC));
-console.log("bengali n");
