@@ -242,6 +242,12 @@ header, section, footer {
     background-color: hsl(0, 0%, 90%);
 }
 
+.mask {
+    position: fixed;
+    width: 100%; height: 100%;
+    background-color: hsl(0, 100%, 100%); opacity: 0.4;
+}
+
 
 .content {
     min-height: 25em;
@@ -264,6 +270,7 @@ textarea[name=input_text],
 textarea[name=unicode_text],
 textarea[name=html_text] {
     width: 100%;
+    height: 10em;
     padding: 8px;
     display: block;
     outline: none;
@@ -338,7 +345,7 @@ background-color: hsl(0, 0%, 100%);
 }
 
 .character-block {
-    width: 90%;
+    width: 100%;
     padding: 1em;
     float: left;
     text-align: center;
@@ -394,6 +401,7 @@ footer {
     textarea[name=input_text],
     textarea[name=unicode_text] {
         width: 50%;
+        height: 25em;
         float: left;
     }
 

@@ -34,6 +34,12 @@ function changeLanguage(language){
     $('.nav-header .selected-lang').html(langName).attr('lang-code', langCode).attr('lang-name', langName);
     localStorage && localStorage.setItem('language', langCode);
     convert();
+    var tables = characterTable(langCode);
+    var vBlock = document.getElementsByClassName('vowels-block').item(0),
+        cBlock = document.getElementsByClassName('consonants-block').item(0);
+    cBlock.innerHTML = vBlock.innerHTML = '';
+    vBlock.appendChild(tables.v);
+    cBlock.appendChild(tables.c);
 }
 
 function convert(){
@@ -46,6 +52,59 @@ function convert(){
 
 
 
+function characterTable(langCode){
+    var data = ILC.languages[langCode].characterCodeTable;
+    var i,j,k,l,
+      vowels = data.vowels,
+      consonants = data.consonants;
+    var vowelTable = document.createElement('table'),
+      consonantTable = document.createElement('table');
+
+    vowelTable.setAttribute('border', true);
+    vowelTable.setAttribute('width', '100%');
+    consonantTable.setAttribute('border', true);
+    consonantTable.setAttribute('width', '100%');
+    var caption = document.createElement('caption');
+    caption.textContent = "Vowels";
+    vowelTable.appendChild(caption);
+    caption = document.createElement('caption');
+    caption.textContent = "Consonants";
+    consonantTable.appendChild(caption);
+
+    for(i=0,j=vowels.length;i<j;i++){
+      tr = document.createElement('tr');
+      for(k=0,l=vowels[i].length;k<l;k++){
+        td = document.createElement('td');
+        keyValue = getKeyValue(vowels[i][k]);
+        td.innerHTML = keyValue[0] + '<br/>' + keyValue[1];
+        tr.appendChild(td);
+      }
+      vowelTable.appendChild(tr);
+    }
+
+    for(i=0,j=consonants.length;i<j;i++){
+      tr = document.createElement('tr');
+      for(k=0,l=consonants[i].length;k<l;k++){
+        td = document.createElement('td');
+        keyValue = getKeyValue(consonants[i][k]);
+        td.innerHTML = keyValue[0] + '<br/>' + keyValue[1];
+        tr.appendChild(td);
+      }
+      consonantTable.appendChild(tr);
+    }
+
+    return {v: vowelTable, c: consonantTable};
+}
+
+function getKeyValue(object){
+  for(var key in object){
+    if(object.hasOwnProperty(key)){
+      return [key, object[key]];
+    }
+  }
+}
+
+
 $('.nav-header').on('click', '.more-icon', function(ev){
   if(!$('.nav-header .more-menu-list').is(':visible')){
     $('.nav-header .more-menu-list').show();
@@ -54,8 +113,6 @@ $('.nav-header').on('click', '.more-icon', function(ev){
 })
 .on('click', '.select-box .select-btn', function(ev){
   var $selectedLi;
-  console.log("before---------");
-  $('.nav-header .lang-menu-list li').each(function(){console.log(this.textContent, this.className);});
   if(!$('.nav-header .lang-menu-list').is(':visible')){
     $('.nav-header .lang-menu-list li').removeClass('active');
     $selectedLi = $('.nav-header .lang-menu-list li').filter(function(i, el){ return el.textContent==$('.nav-header .selected-lang').text(); })
@@ -64,8 +121,6 @@ $('.nav-header').on('click', '.more-icon', function(ev){
     $('.nav-header .lang-menu-list').show();
   }
   ev.stopPropagation();
-  console.log("after---------");
-  $('.nav-header .lang-menu-list li').each(function(){console.log(this.textContent, this.className);})
 })
 .on('click', '.lang-menu-list li', function(){
     var $li = $(this),
@@ -105,7 +160,6 @@ $($input_text).on('change keyup focus', convert)
         $('.nav-header .lang-menu-list').hide();
       }, 100);
   });
-
 
 
 });
