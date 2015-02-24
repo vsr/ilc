@@ -117,7 +117,7 @@ $('.nav-header').on('click', '.more-icon', function(ev){
     $('.nav-header .lang-menu-list li').removeClass('active');
     $selectedLi = $('.nav-header .lang-menu-list li').filter(function(i, el){ return el.textContent==$('.nav-header .selected-lang').text(); })
     .addClass('active');
-    $selectedLi.length && $selectedLi.get(0).scrollIntoViewIfNeeded();
+    $selectedLi.length && $selectedLi.get(0).scrollIntoView();
     $('.nav-header .lang-menu-list').show();
   }
   ev.stopPropagation();
@@ -150,7 +150,7 @@ $('.accordion-header').on('click', function(){
 
 $($input_text).on('change keyup focus', convert)
 .on('focus', function(){
-    this.scrollIntoViewIfNeeded();
+    this.scrollIntoView();
   });
 
   $('body').on('click', function(ev){
