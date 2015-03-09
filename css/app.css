@@ -132,11 +132,15 @@ header, section, footer {
 
 .nav-header .logo, .nav-header .title, .nav-header .back-button {
     float: left;
-    margin: 16px;
+    padding: 16px;
+    -webkit-tap-highlight-color: hsl(0, 0%, 90%);
+    tap-highlight-color: hsl(0, 0%, 90%);
 }
 
 .nav-header .logo {
     width: 24px;
+    margin: 16px;
+    padding: 0;
 }
 .nav-header .back-button {
   text-decoration: none;
@@ -145,6 +149,9 @@ header, section, footer {
   line-height: 24px;
   font-weight: bold;
   font-family: monospace;
+}
+.nav-header .back-button:active {
+    background-color: hsl(0, 0%, 90%);
 }
 .nav-header .title {
     display: none;
@@ -242,8 +249,8 @@ header, section, footer {
 
 .more-menu-list li {
     font-size: 16px;
-    line-height: 1.65em;
-    padding: 0.5em;
+    line-height: 3em;
+    padding: 0 1em;
 }
 .more-menu-list li:active {
     background-color: hsl(0, 0%, 90%);

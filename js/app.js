@@ -150,8 +150,13 @@ $('.accordion-header').on('click', function(){
 
 $($input_text).on('change keyup focus', convert)
 .on('focus', function(){
-    this.scrollIntoView();
+    //this.scrollIntoView();
+    document.body.scrollTop=0;
   });
+
+$($unicode_text).on('focus', function(){
+  $unicode_text.select();
+});
 
   $('body').on('click', function(ev){
       //$('.nav-header .more-menu-list').hide();
