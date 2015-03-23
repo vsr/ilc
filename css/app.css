@@ -191,12 +191,15 @@ header, section, footer {
 .lang-menu-list li {
     line-height: 1.65em;
     padding: 0.5em;
+    transition: all 0.1s;
 }
 
 .lang-menu-list li.active {
     background-color: hsl(0, 0%, 90%);
 }
-
+.lang-menu-list li:active {
+    background-color: hsl(0, 0%, 90%);
+}
 .dropdown-icon {
     background-image: url('../img/ic_arrow_drop_down_black_48dp.png');
     background-position: 0 0;

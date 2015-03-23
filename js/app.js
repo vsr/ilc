@@ -122,12 +122,18 @@ $('.nav-header').on('click', '.more-icon', function(ev){
   }
   ev.stopPropagation();
 })
-.on('click', '.lang-menu-list li', function(){
+.on('click', '.lang-menu-list li', function(ev){
+
+
     var $li = $(this),
         langCode = $li.attr('lang-code'),
         langName = $li.attr('lang-name');
-
-  changeLanguage(langCode);
+    setTimeout(function(){
+      $('.nav-header .more-menu-list').hide();
+      $('.nav-header .lang-menu-list').hide();
+      changeLanguage(langCode);
+    }, 200);
+    ev.stopPropagation();
 });
 
 var selectedLang = localStorage && localStorage.getItem('language');
