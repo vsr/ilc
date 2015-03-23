@@ -94,7 +94,7 @@ body {
 }
 
 .header-container {
-    max-width: initial;
+    max-width: 100%;
     z-index: 7;
     position: fixed;
 }
@@ -411,7 +411,7 @@ footer {
         height: 64px;
     }
     .nav-header .title {
-        display: initial;
+        display: inline-block;
     }
 
     .nav-header h1, .nav-header .select-box {
