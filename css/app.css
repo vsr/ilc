@@ -367,6 +367,9 @@ background-color: hsl(0, 0%, 100%);
     float: left;
     text-align: center;
 }
+.character-block table {
+    border: 0;
+}
 .character-block td {
     padding: 0.5em;
 }
@@ -384,6 +387,23 @@ footer {
     font-family: "Roboto", sans-serif;
 }
 
+kbd {
+    padding: .1em .6em;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #f7f7f7;
+    color: #333;
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 .1em;
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.4;
+    white-space: nowrap;
+    cursor: pointer;
+}
 
 ::-webkit-scrollbar {
     width: 8px;

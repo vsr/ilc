@@ -48,6 +48,25 @@ $(function(){
     localStorage && localStorage.setItem('inputText', $input_text.value);
   }
 
+  function updateKeyboardInput(event){
+    if(!event || !event.target || !event.target.nodeName=='KBD'){
+      return false;
+    }
+    var selectionStart = $input_text.selectionStart,
+        selectionEnd = $input_text.selectionEnd,
+        input_value = $input_text.value,
+        pressedKey = event.target.getAttribute('key') || '';
+
+    pressedKey = pressedKey && pressedKey.trim().split(',') && pressedKey.split(',')[0];
+
+    if(pressedKey){
+      $input_text.value = input_value.slice(0, selectionStart) + pressedKey + input_value.slice(selectionEnd, input_value.length);
+      convert();
+      $input_text.selectionStart = selectionStart+1;
+      $input_text.selectionEnd = $input_text.selectionStart;
+    }
+  }
+
   function characterTable(langCode){
     var data = ILC.languages[langCode].characterCodeTable,
       i,j,k,l,
@@ -72,7 +91,7 @@ $(function(){
       for(k=0,l=vowels[i].length;k<l;k++){
         td = document.createElement('td');
         keyValue = getKeyValue(vowels[i][k]);
-        td.innerHTML = keyValue[0] + '<br/>' + keyValue[1];
+        td.innerHTML = '<kbd key="'+keyValue[0]+'">'+keyValue[0] + '<br/>' + keyValue[1]+'</kbd>';
         tr.appendChild(td);
       }
       vowelTable.appendChild(tr);
@@ -83,7 +102,7 @@ $(function(){
       for(k=0,l=consonants[i].length;k<l;k++){
         td = document.createElement('td');
         keyValue = getKeyValue(consonants[i][k]);
-        td.innerHTML = keyValue[0] + '<br/>' + keyValue[1];
+        td.innerHTML = '<kbd key="'+keyValue[0]+'">'+keyValue[0] + '<br/>' + keyValue[1]+'</kbd>';
         tr.appendChild(td);
       }
       consonantTable.appendChild(tr);
@@ -147,6 +166,7 @@ $(function(){
     $(this).next('.accordion-content').slideToggle();
   }).next('.accordion-content').hide();
 
+  document.getElementsByClassName('character-table-section')[0].addEventListener('click', updateKeyboardInput);
 
   $($input_text).on('change keyup focus', convert)
   .on('focus', function(){
