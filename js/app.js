@@ -23,6 +23,8 @@ $(function(){
     if(inputText) {
         $input_text.value = inputText;
     }
+    $input_text.setAttribute('placeholder', 'Type your text here in Latin(English) characters..\nRefer to the character code table below to learn how to type.');
+    $unicode_text.setAttribute('placeholder', 'Transliterated text in the language of your choice will appear here.');
   }());
 
 
