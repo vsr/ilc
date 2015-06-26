@@ -64,7 +64,7 @@ $(function(){
     if(pressedKey){
       $input_text.value = input_value.slice(0, selectionStart) + pressedKey + input_value.slice(selectionEnd, input_value.length);
       convert();
-      $input_text.selectionStart = selectionStart+1;
+      $input_text.selectionStart = selectionStart+pressedKey.length;
       $input_text.selectionEnd = $input_text.selectionStart;
     }
   }
